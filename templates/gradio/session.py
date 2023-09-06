@@ -9,6 +9,7 @@ CSRF_TOKEN = None # to store csrf token for post request
 # server = "http://localhost:8000/" # uncomment this if debug locally
 server = os.getenv("SERVER") # uncomment this if deploy
 if server[-1] != "/": server += "/"
+if server[:4] != "http": server = "http://" + server
 
 def get_csrf_token(refresh=False):
     """return csrf token either by local variable or from the backend.

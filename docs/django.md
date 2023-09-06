@@ -20,3 +20,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+python requests No connection adapters were found for
+use http://
