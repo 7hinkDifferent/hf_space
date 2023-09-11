@@ -16,8 +16,8 @@ def get_csrf_token(refresh=False):
     """
     global CSRF_TOKEN
     if (CSRF_TOKEN == None or refresh):
-        response = get("csrf/")
-        CSRF_TOKEN = response["csrf_token"]
+        content = get("csrf/")
+        CSRF_TOKEN = content["csrf_token"]
     return CSRF_TOKEN
 
 def format_content(content: dict = {}):
