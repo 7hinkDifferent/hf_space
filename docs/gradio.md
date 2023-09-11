@@ -13,3 +13,11 @@ inference endpoint
 
 modified README.md
 make it hf-like
+
+
+weird things
+
+with gr.Row(visible=False) as canvas:
+    with gr.Row(elem_id) as container:
+        pass
+这样才能不见，不然的话，可能是因为css的原因导致visible不生效

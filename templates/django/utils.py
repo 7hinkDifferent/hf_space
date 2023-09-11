@@ -1,5 +1,3 @@
-from scripts.config import *
-from scripts.utils import get_solver
 from django.http import HttpRequest, HttpResponse
 from django.middleware.csrf import get_token
 import pickle
