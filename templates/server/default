@@ -5,6 +5,13 @@ server {
 
     # add_header Content-Security-Policy "upgrade-insecure-requests";
 
+    ##
+    # uwsgi timeout settings
+    ##
+    uwsgi_connect_timeout 300s;
+    uwsgi_read_timeout 300s;
+    uwsgi_send_timeout 300s;
+
     location /static {
 
             add_header Access-Control-Allow-Origin $http_origin;
