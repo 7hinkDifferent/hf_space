@@ -1,3 +1,8 @@
+TODO:
+1. walkthrough
+2. LICENSE, USE_POLICY and tex reference
+
+
 gradio README.md
 
 some LICENSE, USE_POLICY and tex reference
@@ -15,3 +20,6 @@ some LICENSE, USE_POLICY and tex reference
 # 4. [ ] some warning and hint
 # 5. [x] django server
 # 6. [x] emoji and description
+
+
+---

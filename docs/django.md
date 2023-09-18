@@ -1,3 +1,8 @@
+TODO:
+1. 为什么有后端，django
+2. 基本概念和如何使用（数据库感觉可以不用管）
+3. utils.py使用
+
 路径问题实在是很难受，如何更好地迁移？
 
 需要一个本地调试的方案
@@ -24,3 +29,8 @@ DATABASES = {
 
 python requests No connection adapters were found for
 use http://
+
+
+
+---
+
