@@ -9,6 +9,13 @@ GRADIO = os.path.join(TEMPLATES, "gradio")
 SERVER = os.path.join(TEMPLATES, "server")
 
 def cp_django(path):
+    """expected directory structure
+    /home/
+        api/
+            api/
+                +++utils.py
+            +++*
+    """
     if path == None:
         path = os.path.join(ROOT, "api")
 
@@ -20,6 +27,11 @@ def cp_django(path):
             shutil.copy(os.path.join(DJANGO, file), path)
 
 def cp_gradio(path):
+    """expected directory structure
+    /home/
+        gradio-app/
+            +++*
+    """
     if path == None:
         path = os.path.join(ROOT, "gradio-app")
 
@@ -28,6 +40,16 @@ def cp_gradio(path):
         shutil.copy(os.path.join(GRADIO, file), path)
 
 def cp_server(path):
+    """expected directory structure
+    /
+        etc/
+            /nginx/sites-enabled/
+                +++default
+            +++supervisord.conf
+        root/
+            +++*
+        +++start.sh
+    """
     files = os.listdir(SERVER)
     for file in files:
         if file == "default":
