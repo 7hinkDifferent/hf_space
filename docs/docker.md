@@ -4,6 +4,11 @@ TODO:
 3. Dockerfile
 4. 如何使用templates/
 
+
+如果需要方便查看内部的文件，customized daemon.json
+
+安装docker的脚本
+
 ```bash
 docker volume create gradio
 

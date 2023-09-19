@@ -6,4 +6,7 @@ TODO:
 
 inference endpoint
 
+modified README.md
+make it hf-like🤗
+
 ---

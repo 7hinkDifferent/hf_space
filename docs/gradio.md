@@ -20,7 +20,7 @@ inference endpoint
 
 
 modified README.md
-make it hf-like
+make it hf-like🤗
 
 
 weird things

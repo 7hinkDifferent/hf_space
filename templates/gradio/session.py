@@ -6,8 +6,8 @@ SESSION = requests.session() # start a session connection
 CSRF_TOKEN = None # to store csrf token for post request
 
 # get remote server
-# server = "http://localhost:8000/" # uncomment this if debug locally
-server = os.getenv("SERVER") # uncomment this if deploy
+# server = "http://localhost:8000/" # TODO: uncomment this if debug locally
+server = os.getenv("SERVER") # TODO: uncomment this if deploy
 if server[-1] != "/": server += "/"
 if server[:4] != "http": server = "http://" + server
 
